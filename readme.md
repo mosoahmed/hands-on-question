@@ -27,10 +27,9 @@ inside the **App** class:
     
     3. For each method (view, remove), for ajax url it need an id to identify which person is being used as 
     parameters. you can check in the table in the html element what is the id for each person
-    which is display in column ID.
-        1. please identify the respectively id by replace the ?? in each method with your single line code.
+    which is display in column ID. Please identify the respectively *id* by replace the "??" in each method with your single line code.
 
-2. Make the UI flow "live".
+2. Make the UI flow works
 By default in the html there is element with id "response-message" which by default is not hidden.
 
     1. Please make it hidden once the page is loaded, so by default user will not see this message when the page is

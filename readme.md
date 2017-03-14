@@ -19,7 +19,7 @@ inside the **App** class:
 1. view method
 2. remove method
 
-###Question
+###Questions
 1. Please make all action buttons (view and remove works) respectively
     1. when view is click it will stub / call method **view** in **App** class
     

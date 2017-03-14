@@ -16,8 +16,8 @@ In the **action** column there a 2 links which are view and remove links.
 
 |ID |Name |Age |Sex |Action |
 |-------|-------|-------|-------|-------|
-|1 |John Smith |31 |Male |view remove |
-|2 |Sarah Johnson |28 |Female |view remove |
+|1 |John Smith |31 |Male |[view](view) [remove](remove) |
+|2 |Sarah Johnson |28 |Female |[view](view) [remove](remove) |
 
 You were provided with predefine javascript and css in the **html** files where the already had few methods
 inside the **App** class some just declaration and some with a predefine logic.

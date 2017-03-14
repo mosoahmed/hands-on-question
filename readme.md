@@ -50,8 +50,8 @@ By default in the html there is element with id "response-message" which by defa
         2. Please complete **view** method on result *false* SHOW the *response-message* and the element should
         apply *.failed* provided in the css and show message "Request is failed!" within the element.
     
-        3. For each message is display in the page, either *success* or *failed* it will just show to user in 5 seconds, then it
-        should hide it the message automatically.
+        3. For each message display (in #response-message element), either *success* or *failed* it will just show to user in 5 seconds, then it
+        should hide the message automatically.
         
         4. Please complete **delete** method on result *success* it will remove which rows it was intended to remove.
         for e.g if user click remove row of John Smith please remove the table row after *success*

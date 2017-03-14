@@ -16,6 +16,7 @@ In the **action** column there a 2 links which are view and remove links.
 
 You were provided with predefine javascript and css in the **html** files where the already had few methods
 inside the **App** class some just declaration and some with a predefine logic.
+
 1. view method
 2. remove method
 3. initialize method

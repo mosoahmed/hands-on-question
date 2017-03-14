@@ -11,7 +11,7 @@ You've provided with 2 source code:
 *all ajax url is not working, it just dummy url*
 
 ##Introduction
-From the **Table** you can see a list with 5 column id, name, gender, sex and action columns.
+From the **Table** you can see a list with 5 column id, name, age, sex and action columns.
 In the **action** column there a 2 links which are view and remove links.
 
 |ID |Name |Age |Sex |Action |

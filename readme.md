@@ -48,7 +48,7 @@ By default in the html there is element with id "response-message" which by defa
         should hide it the message automatically.
         
         4. Please complete **delete** method on result *success* it will remove which rows it was intended to remove.
-        for e.g if user click remove in row of John Smith please remove the table row after *success*
+        for e.g if user click remove row of John Smith please remove the table row after *success*
         
 3. Sass / Scss conversion
 From the given css file (fe_01_style.css), please add a file of sass / scss file which will having same result as the 

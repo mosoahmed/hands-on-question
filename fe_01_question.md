@@ -2,12 +2,11 @@
 
 ##Instruction
 You've provided with 2 source code:
-<return>
+
 1. fe_01.html
 2. fe_01_style.css
-<return>
-> fe_o1.html is not complete code where you'll complete it for this hands-on test
 
+> fe_o1.html is not complete code where you'll complete it for this hands-on test
 > all ajax url is not working, it just dummy url
 
 ##Introduction

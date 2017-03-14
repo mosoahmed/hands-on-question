@@ -7,6 +7,7 @@ You've provided with 2 source code:
 2. fe_01_style.css
 
 *fe_o1.html is not complete code where you'll complete it for this hands-on test*
+
 *all ajax url is not working, it just dummy url*
 
 ##Introduction
@@ -20,15 +21,16 @@ inside the **App** class:
 
 ###Question
 1. Please make all action buttons (view and remove works) respectively
-    1. when view it's click it will stub / call method **view** in **App** class
+    1. when view is click it will stub / call method **view** in **App** class
     
-    2. when remove it's click it will stub / call method **remove** in **App** class
+    2. when remove is click it will stub / call method **remove** in **App** class
     
     3. For each method (view, remove), for ajax url it need an id to identify which person is being used as 
     parameters. you can check in the table in the html element what is the id for each person
     which is display in column ID.
         1. please identify the respectively id by replace the ?? in each method with your single line code.
-        
+                
+
 2. Make the UI flow "live".
 By default in the html there is element with id "response-message" which by default is not hidden.
     1. Please make it hidden once the page is loaded, so by default user will not see this message when the page is

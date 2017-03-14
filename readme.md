@@ -30,7 +30,10 @@ inside the **App** class some just declaration and some with a predefine logic.
     
     3. For each method (view, remove), for ajax url it need an id to identify which person is being used as 
     parameters. you can check in the table in the html element what is the id for each person
-    which is display in column ID. Please identify the respectively *id* by replace the "??" in each method with your single line code.
+    which is display in column ID. Please identify the respectively *id* by replace the "??" [line 49 and 59] in each method with your single line code.
+    ```
+    var id = '??'; 
+    ```
 
 2. Make the UI flow works (for all #2 question you can add your own methods if you want)
 By default in the html there is element with id "response-message" which by default is not hidden.

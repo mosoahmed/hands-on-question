@@ -53,6 +53,6 @@ By default in the html there is element with id "response-message" which by defa
 3. Sass / Scss conversion
 From the given css file (fe_01_style.css), please add a file of sass / scss file which will having same result as the 
 css. 
-p/s Try utilize as many sass / scss feature when you converting the scss.
+p/s Try utilize as many sass / scss feature when you converting the css.
     
 

@@ -1,0 +1,66 @@
+$font-stack:    "Times New Roman", Times, serif;
+$primary-color: #3e3e3e;
+$border-style:1px solid #cccccc;
+
+
+
+
+
+body {
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+table {
+  border: 1px solid #3e3e3e;
+  border-spacing: 0px;
+  border-collapse: separate;
+}
+
+td {
+  padding: 5px 10px;
+  border-right: $border-style;
+  border-top: $border-style;
+}
+
+td:last-of-type{
+  border-right: none;
+}
+
+table a {
+  font-family: $font-stack;
+  font-size: $primary-color;
+  color: #3e3e3e;
+}
+
+.message {
+  font-family: $font-stack;
+  font-size: $primary-color;
+}
+
+.success {
+  background: greenyellow;
+}
+
+.failed {
+  background: red;
+  color: #fff;
+}
+
+#response-message {
+  display: none;
+}
+
+.content{
+  width: 860px;
+  margin: 20px auto;
+}
+.datagrid{
+  width: 100%;
+  margin: 0 auto;
+}
+.datagrid table{
+  @extend .datagrid;
+  text-align: center;
+}

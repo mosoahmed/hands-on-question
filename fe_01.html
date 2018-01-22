@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="fe_01_style.css" type="text/css" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 <body>
     <div class="content">
@@ -40,44 +40,72 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script>
+    <script>
 
-    var App = function(){
-        var url = 'api';
+        //Notes:
+        //1- api url have been changes to use active online url for test that return json
+        //2- by default all success msg will working fine
+        //3- by default if there was internet connection the fail msg will not work if return success
+        //4- to test fail msg status disable internet for block so the return msg be false
 
-        function view(event) {
-            var id = '??'; //please determine the id
-            $.ajax({
-                url: url + '/view/' +id,
-                data: data
-            }).done( function (data){
+        var App = function(){
 
-            });
-        }
+            var url = 'https://jsonplaceholder.typicode.com';
+            var data=[{"name": "You Don't know JS - Book Series", "provider": "Kyle Simpson"}];
+            var data_empty=[];
 
-        function remove(event) {
-            var id = '??'; //please determine the id
-            $.ajax({
-                url: url + '/remove/' + id ,
-                data: data
-            }).done( function (data){
+            function showSuccessMsg(){
+                $(".message").addClass("success").text("Request has been done").fadeIn('fast').delay(2000).fadeOut('fast');
+            }
+            function showFailMsg(){
+                $(".message").removeClass("success").addClass('failed').text("Request failed").fadeIn('fast').delay(2000).fadeOut('fast');
+            }
 
-            });
-        }
+            function view(event) {
+                var id = $(event.target).attr("data-id"); //please determine the id
+                $.ajax({
+                    url: url + '/posts/' +id,
+                    method: 'GET',
+                    data: data
+                }).done( function (data){
+                            showSuccessMsg();
+                }).fail(function(data){
+                            showFailMsg();
+                });
+            }
 
-        function initialize() {
-            //
-        }
+            function remove(event) {
+                var id = $(event.target).attr("data-id"); //please determine the id
+                $.ajax({
+                    url: url + '/posts/' + id ,
+                    method: 'DELETE',
+                    data: data
+                }).done( function (data){
+                            showSuccessMsg();//show success msg
+                            $(event.target).parent().parent().remove();//remove tr from the table
+                }).fail(function(data){
+                            showFailMsg();
+                });
+            }
 
-        return {
-            //
-        }
 
-    }();
 
-    $(function () {
+            function initialize() {
+                $('.datagrid a').each(function() {
+                    ($(this).index()==0)?$(this).on('click',view):$(this).on('click',remove);
+                });
+            }
 
-    });
-</script>
+            return {
+                initialize:initialize
+            }
+
+        }();
+
+        $(function () {
+            App.initialize();
+        });
+    </script>
+
 </body>
 </html>

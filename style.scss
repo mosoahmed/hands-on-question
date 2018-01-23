@@ -30,13 +30,13 @@ td:last-of-type{
 
 table a {
   font-family: $font-stack;
-  font-size: $primary-color;
-  color: #3e3e3e;
+  font-size: 16px;
+  color: $primary-color;
 }
 
 .message {
   font-family: $font-stack;
-  font-size: $primary-color;
+  font-size: 14px;
 }
 
 .success {
